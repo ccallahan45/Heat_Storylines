@@ -1,6 +1,6 @@
 # Intensifying risk of mass human heat mortality if historical weather patterns recur
 
-This repository proviudes code and data for "Intensifying risk of mass human heat mortality if historical weather patterns recur," currently in review. You can read the preprint [here](https://eartharxiv.org/repository/view/8375/).
+This repository provides code and data for "Intensifying risk of mass human heat mortality if historical weather patterns recur," currently in review. You can read the preprint [here](https://eartharxiv.org/repository/view/8375/).
 
 ### Organization
 
