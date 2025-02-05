@@ -26,8 +26,16 @@ Much of the intermediate data required to reproduce the final figures and number
 
 Each script performs one component of the analysis.
 
-- `Aggregate_EuropeWide_E-OBS_Data.py` takes the raw E-OBS input data and aggregates it to district-level (NUTS) boundaries at the daily and weekly level.
+- `Aggregate_EuropeWide_E-OBS_Data.py` takes the raw E-OBS input data and aggregates it to district-level (NUTS) boundaries at the daily and weekly level. This script was run remotely on an HPC system and may require significant memory.
 
 - `Construct_Eurostat_Panel.R` combines the E-OBS district-level data with matching weekly mortality and temperature data and produces a final panel dataset spanning 2000-2022.
 
-- `Europe_Mortality_Regressions.R` 
+- `Europe_Mortality_Regressions.R` performs the regression analysis to derive the exposure-response functions.
+  
+- `Plot_Event_Timeseries.ipynb` plots and sets the time periods of each event.
+
+- `Counterfactual_Events.py` combines the E-OBS data and neural network predictions to create counterfactual versions of each historical event at varying levels of global warming. This script was run remotely on an HPC system and may require significant memory.
+
+- `CMIP6_EU_Scaling.py` and `CMIP6_Adaptation_Scaling.ipynb` aggregate CMIP6 projections to the EU district level and calculate the scaling between global mean temperature and district-level temperature (for use in the adaptation analysis).
+
+- `Counterfactual_Event_Mortality.py` performs the final calculations of each event's mortality at varying levels of global warming. 
